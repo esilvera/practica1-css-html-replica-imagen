@@ -1,23 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" class="css">
+    <title>Practica CSS</title>
 </head>
-<body>
-    <div class="box">
-        <i class="far fa-heart"></i>
-        <i class="far fa-paper-plane"></i>
-        <i class="far fa-bookmark"></i>
-    </div>
 
-    <button class="btn btn-primary btn-sm">
-        Click Me
-    </button>
+<body>
+    <div class="container">
+        <div class="header">
+            <a class="topheader">Sign up for Meh.</a>
+            <a class="botheader">Everything you need to buid a pretty online portfolio.</a>
+        </div>
+        <div class="box">
+            <a class="topbox">100%</a>
+            <a class="midbox">FREE</a>
+            <a class="botbox">for real</a>
+        </div>
+        <div class="row">
+            <div class="col01">
+                <div class="numberCircle">1</div>
+            </div>
+            <div class="col02">
+                <h3>First, name your portfolio</h3>
+            </div>
+        </div>
+        <form>
+            <label>Portfolio title</label><br>
+            <input type="text" id="ptitle" name="ptitle" placeholder=""><br><br>
+            <label>Portfolio address</label><br>
+            <input type="text" id="paddress" name="paddress" placeholder="carbonmade.com"><br><br>
+        </form>
+    </div>
 </body>
+
 </html>

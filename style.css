@@ -1,53 +1,103 @@
 body {
-    background-color: #546;
+    background-color: deepskyblue;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
-
-.box {
-    width: 180px;
-    height: 200px;
-    background-color: #fff;
+.container {
+    width: 600px;
+    background-color: white;
+    display: inline-grid;
+    padding-bottom: 20px;
+}
+.numberCircle {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    background: cornflowerblue;
+    color: white;
+    text-align: center;
+    margin-left: -15px;
+    margin-top: 15px;
+    font-family: monospace;
+    border: 3px solid white;
+}
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: royalblue;
+    color: white;
+    border-radius: 4px;
+}
+.row {
     display: flex;
+}
+.col02 {
+    padding-left: 10px;
+}
+.topheader {
+    font-family: ui-monospace;
+    margin-left: 25px;
+    font-size: 30px;
+    display: flex;
+    margin-top: 20px;
+}
+.botheader {
+    font-family: ui-monospace;
+    margin-left: 25px;
+    font-size: 12px;
+    display: flex;
+}
+form {
+    width: 400px;
+    background-color: aliceblue;
+    margin: auto;
+    padding: 20px;
+}
+input {
+    width: 370px;
+    height: 25px;
+    border-radius: 5px;
+    border: solid;
+    color: antiquewhite;
+}
+#paddress::placeholder {
+    color: red;
+    text-align: right;
+  }
+#ptitle {
+    border-color: red;
+}
+.box {
+    width: 100px;
+    height: 115px;
+    background-color: greenyellow;
+    /* display: flex; */
     justify-content: space-around;
-    align-items: flex-end;
-    padding-top: 10px;
+    display: grid;
+    position: absolute;
+    align-items: center;
+    margin-left: 55%;
+    /* padding-top: 10px; */
     padding-bottom: 10px;
 }
-
-.box .fa-heart {
-   align-self: flex-start;
+.box .topbox, .botbox {
+    color: green;
+    margin: auto;
 }
-
-.box .fa-paper-plane {
-    align-self: center;
- }
- 
-
-.box .fa-heart:hover {
-    background-color: gray;
+.box .midbox {
+    color: white;
+    font-size: 30px;
 }
-
-.box .fa-paper-plane:hover {
-    background-color: red;
-}
-
-
-.fa-heart, .fa-paper-plane, .fa-bookmark {
-    font-size: 1.5rem;
-}
-
-
-.home .banner {
-
-}
-
-.about .banner {
-
-}
-
-.btn-primary {
-    background-color: red;
-}
+.box:before {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-width: 15px 50px 0;
+    border-style: solid;
+    border-color: greenyellow transparent transparent;
+  }
